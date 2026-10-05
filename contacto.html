@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARBOX - Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <input type="checkbox" id="check-menu" class="controlador-checkbox">
+    <input type="checkbox" id="check-buscar" class="controlador-checkbox">
+    <input type="checkbox" id="modal-cart-check" class="controlador-checkbox">
+
+    <header>
+        <div class="contenedor-header">
+            <a href="index.html" class="logotipo">
+                <i class="fa-solid fa-gamepad"></i> STARBOX
+            </a>
+
+            <label for="check-menu" class="icono-btn-label btn-burger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="menu-navegacion">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="consolas.html">Consolas</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+
+            <div class="iconos-header">
+                <div class="contenedor-buscador">
+                    <label for="check-buscar" class="icono-btn-label">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <div class="caja-busqueda">
+                        <input type="text" placeholder="Buscar en STARBOX...">
+                    </div>
+                </div>
+
+                <label for="modal-cart-check" class="icono-btn-label icono-carrito-wrap">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="badge-carrito">0</span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner-principal">
+        <h1>Formulario de Contacto</h1>
+        <p></p>
+    </section>
+
+    <div class="contenedor-seccion-contacto">
+        <div class="tarjeta-contacto">
+            <h2>Envíanos un mensaje</h2>
+            <p class="subtitulo-contacto">Diligencia el siguiente formulario y te responderemos a la brevedad.</p>
+
+            <form action="#" method="POST" class="formulario-contacto">
+                <div class="campo-grupo">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Briand Camargo" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="usuario@misena.edu.co" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Motivo de consulta" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba aquí su mensaje..." required></textarea>
+                </div>
+
+                <button type="submit" class="boton-accion">
+                    <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="ventana-modal" id="modalCarrito">
+        <div class="contenido-modal">
+            <label for="modal-cart-check" class="boton-cerrar-modal">&times;</label>
+            <h2>Carrito de Compras</h2>
+            <p>Producto agregado correctamente a tu lista.</p>
+            <label for="modal-cart-check" class="boton-accion">Entendido</label>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contenedor-footer">
+            <p>&copy; 2026 STARBOX - </p>
+            <div class="redes-sociales">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

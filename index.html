@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARBOX - Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <input type="checkbox" id="check-menu" class="controlador-checkbox">
+    <input type="checkbox" id="check-buscar" class="controlador-checkbox">
+    <input type="checkbox" id="modal-cart-check" class="controlador-checkbox">
+
+    <header>
+        <div class="contenedor-header">
+            <a href="index.html" class="logotipo">
+                <i class="fa-solid fa-gamepad"></i> STARBOX
+            </a>
+
+            <label for="check-menu" class="icono-btn-label btn-burger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="menu-navegacion">
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="consolas.html">Consolas</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <div class="iconos-header">
+                <div class="contenedor-buscador">
+                    <label for="check-buscar" class="icono-btn-label">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <div class="caja-busqueda">
+                        <input type="text" placeholder="Buscar en STARBOX...">
+                    </div>
+                </div>
+
+                <label for="modal-cart-check" class="icono-btn-label icono-carrito-wrap">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="badge-carrito">0</span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner-principal">
+        <h1>Bienvenido a STARBOX</h1>
+        <p>Tu tienda especialista en consolas, mandos y accesorios de última generación.</p>
+    </section>
+
+    <section class="contenedor-seccion-inicio">
+        <div class="encabezado-seccion">
+            <h2>Accesorios Destacados</h2>
+            <p>Explora los productos más populares de la tienda</p>
+        </div>
+
+        <div class="parrilla-productos">
+            <article class="tarjeta-producto">
+                <div class="imagen-producto-wrap">
+                    <img src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=400&q=80" alt="Control DualSense PS5">
+                </div>
+                <div class="info-producto">
+                    <h3 class="titulo-producto">Control DualSense PS5</h3>
+                    <p class="precio-producto">$320.000</p>
+                    <label for="modal-cart-check" class="boton-accion">Agregar al carrito</label>
+                </div>
+            </article>
+
+            <article class="tarjeta-producto">
+                <div class="imagen-producto-wrap">
+                    <img src="https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?auto=format&fit=crop&w=400&q=80" alt="Control Wireless Xbox">
+                </div>
+                <div class="info-producto">
+                    <h3 class="titulo-producto">Control Wireless Xbox</h3>
+                    <p class="precio-producto">$280.000</p>
+                    <label for="modal-cart-check" class="boton-accion">Agregar al carrito</label>
+                </div>
+            </article>
+
+            <article class="tarjeta-producto">
+                <div class="imagen-producto-wrap">
+                    <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=400&q=80" alt="Audífonos Gamer Pulse 3D">
+                </div>
+                <div class="info-producto">
+                    <h3 class="titulo-producto">Audífonos Gamer Pulse 3D</h3>
+                    <p class="precio-producto">$450.000</p>
+                    <label for="modal-cart-check" class="boton-accion">Agregar al carrito</label>
+                </div>
+            </article>
+
+            <article class="tarjeta-producto">
+                <div class="imagen-producto-wrap">
+                    <img src="https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?auto=format&fit=crop&w=400&q=80" alt="Control Pro Switch">
+                </div>
+                <div class="info-producto">
+                    <h3 class="titulo-producto">Control Pro Nintendo Switch</h3>
+                    <p class="precio-producto">$350.000</p>
+                    <label for="modal-cart-check" class="boton-accion">Agregar al carrito</label>
+                </div>
+            </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="accesorios.html" class="boton-accion" style="display: inline-block; width: auto; padding: 12px 25px;">
+                Ver todos los accesorios <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <div class="ventana-modal" id="modalCarrito">
+        <div class="contenido-modal">
+            <label for="modal-cart-check" class="boton-cerrar-modal">&times;</label>
+            <h2>Carrito de Compras</h2>
+            <p>Producto agregado correctamente a tu lista.</p>
+            <label for="modal-cart-check" class="boton-accion">Entendido</label>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contenedor-footer">
+            <p>&copy; 2026 STARBOX - </p>
+            <div class="redes-sociales">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

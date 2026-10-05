@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARBOX - Consolas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <input type="checkbox" id="check-menu" class="controlador-checkbox">
+    <input type="checkbox" id="check-buscar" class="controlador-checkbox">
+    <input type="checkbox" id="modal-cart-check" class="controlador-checkbox">
+
+    
+    <input type="radio" name="filtro-marca" id="f-todos" class="controlador-checkbox" checked>
+    <input type="radio" name="filtro-marca" id="f-playstation" class="controlador-checkbox">
+    <input type="radio" name="filtro-marca" id="f-xbox" class="controlador-checkbox">
+    <input type="radio" name="filtro-marca" id="f-nintendo" class="controlador-checkbox">
+
+    
+    <input type="radio" name="filtro-precio" id="p-todos" class="controlador-checkbox" checked>
+    <input type="radio" name="filtro-precio" id="p-rango1" class="controlador-checkbox">
+    <input type="radio" name="filtro-precio" id="p-rango2" class="controlador-checkbox">
+    <input type="radio" name="filtro-precio" id="p-rango3" class="controlador-checkbox">
+
+    
+    <header>
+        <div class="contenedor-header">
+            <a href="index.html" class="logotipo">
+                <i class="fa-solid fa-gamepad"></i> STARBOX
+            </a>
+
+            <label for="check-menu" class="icono-btn-label btn-burger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="menu-navegacion">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="consolas.html" class="activo">Consolas</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <div class="iconos-header">
+                <div class="contenedor-buscador">
+                    <label for="check-buscar" class="icono-btn-label">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <div class="caja-busqueda">
+                        <input type="text" placeholder="Buscar consola...">
+                    </div>
+                </div>
+
+                <label for="modal-cart-check" class="icono-btn-label icono-carrito-wrap">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="badge-carrito">0</span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner-principal">
+        <h1>Catálogo de Consolas</h1>
+        <p></p>
+    </section>
+
+    <div class="contenedor-seccion">
+        <!-- PANEL LATERAL DE FILTROS -->
+        <aside class="panel-filtros">
+            <h3>Filtrar por Marca</h3>
+            <div class="grupo-filtro">
+                <label for="f-todos" class="opcion-filtro"><i class="fa-solid fa-layer-group"></i> Mostrar Todas</label>
+                <label for="f-playstation" class="opcion-filtro"><i class="fa-brands fa-playstation"></i> PlayStation</label>
+                <label for="f-xbox" class="opcion-filtro"><i class="fa-brands fa-xbox"></i> Xbox</label>
+                <label for="f-nintendo" class="opcion-filtro"><i class="fa-solid fa-gamepad"></i> Nintendo</label>
+            </div>
+
+            <h3>Filtrar por Precio</h3>
+            <div class="grupo-filtro">
+                <label for="p-todos" class="opcion-filtro">Todos los precios</label>
+                <label for="p-rango1" class="opcion-filtro">Menos de $1.000.000</label>
+                <label for="p-rango2" class="opcion-filtro">$1.000.000 - $1.500.000</label>
+                <label for="p-rango3" class="opcion-filtro">Más de $1.500.000</label>
+            </div>
+        </aside>
+
+        
+        <main class="parrilla-productos">
+            <div class="tarjeta-producto" data-marca="playstation" data-rango="rango3">
+                <div class="imagen-producto-wrap">
+                    <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=400&q=80" alt="PS5">
+                </div>
+                <h3 class="titulo-producto">PlayStation 5</h3>
+                <p class="precio-producto">$1.999.900</p>
+                <label for="modal-cart-check" class="boton-accion">Agregar al carrito</label>
+            </div>
+
+            <div class="tarjeta-producto" data-marca="xbox" data-rango="rango3">
+                <div class="imagen-producto-wrap">
+                    <img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&w=400&q=80" alt="Xbox Series X">
+                </div>
+                <h3 class="titulo-producto">Xbox Series X</h3>
+                <p class="precio-producto">$1.799.900</p>
+                <label for="modal-cart-check" class="boton-accion">Agregar al carrito</label>
+            </div>
+
+            <div class="tarjeta-producto" data-marca="nintendo" data-rango="rango2">
+                <div class="imagen-producto-wrap">
+                    <img src="https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?auto=format&fit=crop&w=400&q=80" alt="Nintendo Switch">
+                </div>
+                <h3 class="titulo-producto">Nintendo Switch</h3>
+                <p class="precio-producto">$1.099.900</p>
+                <label for="modal-cart-check" class="boton-accion">Agregar al carrito</label>
+            </div>
+
+            <div class="tarjeta-producto" data-marca="xbox" data-rango="rango1">
+                <div class="imagen-producto-wrap">
+                    <img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&w=400&q=80" alt="Xbox Series S">
+                </div>
+                <h3 class="titulo-producto">Xbox Series S</h3>
+                <p class="precio-producto">$999.900</p>
+                <label for="modal-cart-check" class="boton-accion">Agregar al carrito</label>
+            </div>
+        </main>
+    </div>
+
+    
+    <div class="ventana-modal" id="modalCarrito">
+        <div class="contenido-modal">
+            <label for="modal-cart-check" class="boton-cerrar-modal">&times;</label>
+            <h2 style="font-size: 18px; margin-bottom: 10px;">Carrito de Compras</h2>
+            <p style="font-size: 13px; color: var(--texto-secundario); margin-bottom: 15px;">
+                Producto añadido correctamente.
+            </p>
+            <label for="modal-cart-check" class="boton-accion">Aceptar</label>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contenedor-footer">
+            <p>&copy; 2026 STARBOX - </p>
+        </div>
+    </footer>
+
+</body>
+</html>
